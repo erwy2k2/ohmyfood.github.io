@@ -1,0 +1,27 @@
+.header {
+    &__logo{
+        width: 50%;
+        margin: 0 auto;
+        padding: 20px;
+         img {
+            width: 100%;
+         }
+    }
+}
+.location-panel {
+    display: flex;
+    background-color: $location-panel-color;
+    height: 70px;
+    margin-bottom: 0px;
+    i {
+        margin: auto;
+        margin-right: 0;
+    }
+    h2 {
+        margin: auto;
+        margin-left: 25px;
+        font-family: $text-font;
+        font-size: 22px
+    }
+
+}
