@@ -1,0 +1,104 @@
+/* layout for the whole menu */
+
+/* Title for the restaurant plus like button */
+.menu {
+  background-color: lighten($location-panel-color, 10%);
+  border-radius: 40px 40px 0 0;
+  height: auto;
+  &__titre {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: -80px;
+    h1 {
+      font-size: 35px;
+      font-family: $Title-font;
+    }
+    i {
+      font-size: 35px;
+      margin-left: -20px;
+    }
+  }
+  &__dishes-list {
+    width: 90%;
+    margin: auto;
+  }
+  h2 {
+    font-family: $text-font;
+    font-size: 22px;
+    font-weight: 100;
+    margin-left: 10px;
+    border-bottom: 4px solid darken($color: $color-tertiary, $amount: 10);
+    width: 13%;
+    padding-bottom: 5px;
+  }
+  &__dishes {
+    display: flex;
+    justify-content: space-between;
+    background-color: $white;
+    border-radius: 15px;
+    margin-top: 20px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  }
+  &__dish-information {
+    padding: 0 10px;
+    h3 {
+      font-size: 21px;
+      font-family: $text-font;
+      margin: 15px 15px 15px 5px;
+    }
+    p {
+      font-size: 17px;
+      font-family: $text-font;
+      margin: 15px 15px 15px 5px;
+      margin-top: -8px;
+    }
+  }
+  &__price {
+    font-size: 18px;
+    font-family: $text-font;
+    font-weight: bold;
+    display: flex;
+    align-items: flex-end;
+    margin-right: 30px;
+  }
+  &__checkbox {
+    width: 15%;
+    display: none;
+    border-radius: 0 15px 15px 0;
+    background-color: $color-tertiary;
+    figure {
+      display: flex;
+      align-items: center;
+    }
+    i {
+      color: $color-tertiary;
+      background-color: $white;
+      font-size: 30px;
+      border-radius: 15px;
+      margin-left: -20px;
+    }
+    &:hover {
+      display: block;
+    }
+  }
+  &__order-button {
+    display: flex;
+    justify-content: center;
+    background-color: lighten($color: $color-primary, $amount: 10);
+    width: 50%;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 40px;
+    margin-bottom: 30px;
+    box-shadow: 2px 2px 2px rgba(2, 2, 0, 0.6);
+    p {
+      font-size: 25px;
+      font-family: $text-font;
+      color: $white;
+      font-weight: bold;
+      margin: 15px;
+    }
+  }
+}

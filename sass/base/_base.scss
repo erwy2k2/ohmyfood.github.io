@@ -1,10 +1,17 @@
-$color-primary:#9356dc;
-$color-secondary:#ff79da;
-$color-tertiary:#99E2D0;
-$location-panel-color : lightgrey;
+$color-primary: #9356dc;
+$color-secondary: #ff79da;
+$color-tertiary: #99e2d0;
+$location-panel-color: lightgrey;
+$white: white;
 
 a {
-    text-decoration: none;
-    color : black;
-    font-family: $text-font;
+  text-decoration: none;
+  color: black;
+  font-family: $text-font;
+}
+.margin-bottom {
+  margin-bottom: 40px;
+}
+.padding-bottom {
+  padding-bottom: 40px;
 }
