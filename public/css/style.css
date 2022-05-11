@@ -1,3 +1,4 @@
+/*radial-gradient(circle, lighten($blue, 5) 0%, darken($blue, 10) 100%);*/
 a {
   text-decoration: none;
   color: black;
@@ -10,6 +11,40 @@ a {
 
 .padding-bottom {
   padding-bottom: 40px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.regular-heart {
+  opacity: 1;
+  margin: 0px;
+  margin-right: -79px;
+  transition: opacity 0.1s ease-in;
+}
+.regular-heart:hover {
+  opacity: 0;
+}
+.regular-heart:hover.solid-heart {
+  opacity: 1;
+}
+
+.solid-heart {
+  opacity: 0;
+  margin: 0px;
+  font-size: 110%;
+  transition: all 0.4s ease-in-out;
+  transform: scale(1);
+}
+.solid-heart:hover {
+  opacity: 1;
+  transform: scale(1.1);
 }
 
 .header__logo {
@@ -60,6 +95,8 @@ a {
   margin: 0px;
 }
 .figure-menu img {
+  height: 400px;
+  object-fit: cover;
   width: 100%;
   z-index: -1;
   position: relative;
@@ -98,6 +135,11 @@ a {
   font-family: roboto;
   font-weight: bold;
   border-radius: 40px;
+  transition: all 0.25s ease-out;
+}
+.Navigation-menu a:hover {
+  background-color: #6023a9;
+  box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.4);
 }
 
 .Fonctionnement {
@@ -237,7 +279,7 @@ a {
   font-size: 35px;
 }
 .list__description i:hover {
-  color: #9356dc;
+  color: #782cd3;
 }
 
 @media all and (orientation: landscape) {
@@ -325,7 +367,7 @@ a {
 .menu {
   background-color: #ededed;
   border-radius: 40px 40px 0 0;
-  height: auto;
+  height: 1450px;
 }
 .menu__titre {
   width: 100%;
@@ -341,6 +383,13 @@ a {
 .menu__titre i {
   font-size: 35px;
   margin-left: -20px;
+}
+.menu__titre .regular-heart {
+  margin-left: 0;
+  margin-right: -18px;
+}
+.menu__titre .solid-heart {
+  color: #9356dc;
 }
 .menu__dishes-list {
   width: 90%;
@@ -362,6 +411,14 @@ a {
   border-radius: 15px;
   margin-top: 20px;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  animation: fadeIn;
+  animation-duration: 2s;
+}
+.menu__delay1 {
+  animation-delay: 0.5s;
+}
+.menu__delay2 {
+  animation-delay: 1s;
 }
 .menu__dish-information {
   padding: 0 10px;
@@ -411,10 +468,14 @@ a {
   background-color: #ae80e5;
   width: 50%;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 60px;
   border-radius: 40px;
-  margin-bottom: 30px;
   box-shadow: 2px 2px 2px rgba(2, 2, 0, 0.6);
+  transition: all 0.25s ease-out;
+}
+.menu__order-button:hover {
+  background-color: #6023a9;
+  box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.4);
 }
 .menu__order-button p {
   font-size: 25px;

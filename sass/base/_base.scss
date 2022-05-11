@@ -3,7 +3,15 @@ $color-secondary: #ff79da;
 $color-tertiary: #99e2d0;
 $location-panel-color: lightgrey;
 $white: white;
+$gradient-primary: darken(
+  $color: $color-primary,
+  $amount: 10%,
+);
 
+/*radial-gradient(circle, lighten($blue, 5) 0%, darken($blue, 10) 100%);*/
+
+$darken-transition: 0.4s ease-out;
+$box-shadow-transition: 0.2s ease-out;
 a {
   text-decoration: none;
   color: black;
@@ -18,4 +26,13 @@ a {
 
 @mixin box-shadow {
   box-shadow: 2px 2px 15px lighten($color: $color-primary, $amount: 10);
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+  }
 }

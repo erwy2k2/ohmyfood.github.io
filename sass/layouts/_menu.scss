@@ -4,7 +4,7 @@
 .menu {
   background-color: lighten($location-panel-color, 10%);
   border-radius: 40px 40px 0 0;
-  height: auto;
+  height: 1450px;
   &__titre {
     width: 100%;
     display: flex;
@@ -18,6 +18,13 @@
     i {
       font-size: 35px;
       margin-left: -20px;
+    }
+    .regular-heart {
+      margin-left: 0;
+      margin-right: -18px;
+    }
+    .solid-heart {
+      color: $color-primary;
     }
   }
   &__dishes-list {
@@ -40,6 +47,14 @@
     border-radius: 15px;
     margin-top: 20px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    animation: fadeIn;
+    animation-duration: 2s;
+  }
+  &__delay1 {
+    animation-delay: 0.5s;
+  }
+  &__delay2 {
+    animation-delay: 1s;
   }
   &__dish-information {
     padding: 0 10px;
@@ -89,10 +104,15 @@
     background-color: lighten($color: $color-primary, $amount: 10);
     width: 50%;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 60px;
+
     border-radius: 40px;
-    margin-bottom: 30px;
+
     box-shadow: 2px 2px 2px rgba(2, 2, 0, 0.6);
+    transition: all 0.25s ease-out;
+    &:hover {
+      @include btn;
+    }
     p {
       font-size: 25px;
       font-family: $text-font;

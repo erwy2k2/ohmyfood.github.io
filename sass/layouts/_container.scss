@@ -135,10 +135,11 @@
       font-size: 35px;
     }
     i:hover {
-      color: $color-primary;
+      color: $gradient-primary;
     }
   }
 }
+
 @media all and (orientation: landscape) {
   .header__logo {
     width: 30%;
