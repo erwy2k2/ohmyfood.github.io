@@ -15,3 +15,7 @@ a {
 .padding-bottom {
   padding-bottom: 40px;
 }
+
+@mixin box-shadow {
+  box-shadow: 2px 2px 15px lighten($color: $color-primary, $amount: 10);
+}

@@ -13,15 +13,22 @@
   background-color: $location-panel-color;
   height: 70px;
   margin-bottom: 0px;
-  i {
+  p {
     margin: auto;
-    margin-right: 0;
+    label {
+      font-size: 30px;
+      margin-left: 40px;
+      margin-right: 10px;
+    }
   }
-  h2 {
-    margin: auto;
-    margin-left: 25px;
+  input {
+    margin-left: 0px;
+    padding-left: 20px;
     font-family: $text-font;
     font-size: 22px;
+    font-weight: bold;
+    border: none;
+    background-color: $location-panel-color;
   }
 }
 .header-menu {
