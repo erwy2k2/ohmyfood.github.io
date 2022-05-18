@@ -8,8 +8,6 @@ $gradient-primary: darken(
   $amount: 10%,
 );
 
-/*radial-gradient(circle, lighten($blue, 5) 0%, darken($blue, 10) 100%);*/
-
 $darken-transition: 0.4s ease-out;
 $box-shadow-transition: 0.2s ease-out;
 a {
@@ -34,5 +32,39 @@ a {
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes rotate-right {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-1turn);
+  }
+}
+@keyframes loader {
+  0% {
+    transform: rotate(-0.1turn);
+  }
+  100% {
+    transform: rotate(2.1turn);
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeout {
+  from {
+    opacity: 1;
+    z-index: 9999;
+  }
+  to {
+    opacity: 0;
+    z-index: -1;
   }
 }

@@ -52,3 +52,10 @@
     position: relative;
   }
 }
+@media all and (orientation: landscape) {
+  .figure-menu {
+    img {
+      height: 600px;
+    }
+  }
+}

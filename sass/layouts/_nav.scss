@@ -37,3 +37,39 @@
     }
   }
 }
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  animation: fadeout 0.7s ease-out forwards 2s;
+  .loader__animation {
+    border: 7px inset $color-primary;
+
+    width: 150px;
+    height: 150px;
+    padding: 25px;
+    background-color: $color-tertiary;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: loader 2s ease-in-out infinite alternate both;
+    p {
+      font-family: $Title-font;
+      font-size: 25px;
+      color: black;
+      letter-spacing: 3px;
+      font-weight: bold;
+      animation: fade 2s ease-out infinite both;
+    }
+  }
+}

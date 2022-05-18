@@ -42,38 +42,55 @@
   }
   &__dishes {
     display: flex;
-    justify-content: space-between;
+
     background-color: $white;
     border-radius: 15px;
     margin-top: 20px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-    animation: fadeIn;
+    animation: fadeIn 2s ease 0s 1 both;
     animation-duration: 2s;
+    overflow: hidden;
+    justify-content: space-between;
+    &:hover .menu__checkbox {
+      margin-right: 0px;
+      transition: all 0.3s ease-out;
+    }
+    &:hover figure i {
+      animation: rotate-right 0.3s ease-in 0s 1 both;
+    }
   }
+
   &__delay1 {
-    animation-delay: 0.5s;
+    animation-delay: 0.4s;
   }
   &__delay2 {
-    animation-delay: 1s;
+    animation-delay: 0.8s;
   }
   &__dish-information {
     padding: 0 10px;
+    display: flex;
+    flex-direction: column;
     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 220px;
+    min-width: 60%;
+
     h3 {
       font-size: 21px;
       font-family: $text-font;
       margin: 15px 15px 15px 5px;
-      text-overflow: ellipsis;
-      overflow: hidden;
     }
     p {
       font-size: 17px;
       font-family: $text-font;
       margin: 15px 15px 15px 5px;
       margin-top: -8px;
-      text-overflow: ellipsis;
-      overflow: auto;
     }
+  }
+  aside {
+    display: flex;
+    transition: all 0.5s ease-out;
   }
   &__price {
     font-size: 18px;
@@ -81,26 +98,31 @@
     font-weight: bold;
     display: flex;
     align-items: center;
-    margin-right: 30px;
+    min-width: 45px;
+    padding-left: 10px;
+    margin-right: 0px;
   }
   &__checkbox {
-    width: 15%;
-    display: none;
+    width: 80px;
     border-radius: 0 15px 15px 0;
     background-color: $color-tertiary;
+    justify-content: center;
+    margin-right: -80px;
+
+    margin-left: 0px;
+
     figure {
       display: flex;
+      justify-content: center;
       align-items: center;
     }
     i {
       color: $color-tertiary;
       background-color: $white;
-      font-size: 30px;
-      border-radius: 15px;
-      margin-left: -20px;
-    }
-    &:hover {
-      display: block;
+      font-size: 35px;
+      border-radius: 20px;
+      margin-left: 0px;
+      margin-top: 10px;
     }
   }
   &__order-button {
@@ -153,6 +175,9 @@
       margin: 10px;
       width: 100%;
       max-width: 415px;
+    }
+    &__checkbox figure i {
+      margin-top: 5px;
     }
     &__dishes-list {
       width: 100%;
