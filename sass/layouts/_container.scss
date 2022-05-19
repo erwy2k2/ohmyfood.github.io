@@ -3,9 +3,9 @@
   flex-direction: column;
   margin-bottom: 40px;
   h1 {
-    margin-top: 70px;
+    margin-top: 50px;
     font-family: $text-font;
-    margin-left: 20px;
+    margin-left: 35px;
     font-size: 29px;
   }
   &__stepslist {
@@ -22,11 +22,14 @@
     border-radius: 25px;
     align-items: center;
     transform: scale(1);
+    box-shadow: 2px 2px 5px rgba(2, 2, 0, 0.6);
 
     &:hover {
       transform: scale(1.02);
       transition: all 0.4s ease-out;
-      @include box-shadow;
+    }
+    &:hover i {
+      color: $color-primary;
     }
     span {
       background-color: $color-primary;
@@ -42,9 +45,7 @@
       font-size: 22px;
       color: gray;
     }
-    i:hover {
-      color: $color-primary;
-    }
+
     p {
       font-family: $text-font;
       font-size: 18px;
@@ -53,7 +54,9 @@
     }
   }
   &__steps:hover {
-    background-color: lighten($color: $color-primary, $amount: 30%);
+    background: $gradient-secondary;
+    opacity: 0.85;
+    cursor: pointer;
   }
 }
 .list {
@@ -69,14 +72,15 @@
     align-items: center;
   }
   h1 {
-    padding-top: 20px;
+    padding-top: 40px;
     font-family: $text-font;
 
     font-size: 29px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
   &__texte--margin-left {
-    margin-left: -60%;
+    margin-left: 35px;
+    align-self: flex-start;
   }
   &__restaurant {
     margin: 20px;
@@ -135,7 +139,11 @@
       font-size: 35px;
     }
     i:hover {
-      color: $gradient-primary;
+      background-image: $gradient-secondary;
+      background-position: 0;
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
     }
   }
 }
@@ -161,7 +169,7 @@
     }
   }
   .list__texte--margin-left {
-    margin-left: 0%;
+    margin-left: 20px;
   }
   .list {
     display: flex;

@@ -3,11 +3,20 @@ $color-secondary: #ff79da;
 $color-tertiary: #99e2d0;
 $location-panel-color: lightgrey;
 $white: white;
-$gradient-primary: darken(
-  $color: $color-primary,
-  $amount: 10%,
+
+$gradient-primary: linear-gradient(
+  45deg,
+  rgba(255, 121, 218, 1) 0%,
+  rgba(255, 121, 218, 1) 21%,
+  rgba(147, 86, 220, 1) 100%
 );
 
+$gradient-secondary: linear-gradient(to left, $color-primary, $color-tertiary);
+$gradient-secondary-dark: linear-gradient(
+  to left,
+  $color-primary,
+  $color-secondary
+);
 $darken-transition: 0.4s ease-out;
 $box-shadow-transition: 0.2s ease-out;
 a {
@@ -23,7 +32,7 @@ a {
 }
 
 @mixin box-shadow {
-  box-shadow: 2px 2px 15px lighten($color: $color-primary, $amount: 10);
+  box-shadow: 2px 2px 15px rgba(2, 2, 0, 0.6);
 }
 @keyframes fadeIn {
   0% {

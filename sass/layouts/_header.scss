@@ -15,6 +15,8 @@
   margin-bottom: 0px;
   p {
     margin: auto;
+    font-family: $text-font;
+
     label {
       font-size: 30px;
       margin-left: 40px;
@@ -25,9 +27,10 @@
     margin-left: 0px;
     padding-left: 20px;
     font-family: $text-font;
-    font-size: 22px;
-    font-weight: bold;
+    font-size: 21px;
+    font-weight: 600;
     border: none;
+    color: darken($color: $location-panel-color, $amount: 050);
     background-color: $location-panel-color;
   }
 }
@@ -56,6 +59,22 @@
   .figure-menu {
     img {
       height: 600px;
+    }
+  }
+}
+@media all and (max-width: 390px) {
+  .location-panel {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    p {
+    }
+    label {
+      font-size: 18px;
+    }
+    input {
+      font-size: 20px;
+      width: 60%;
     }
   }
 }

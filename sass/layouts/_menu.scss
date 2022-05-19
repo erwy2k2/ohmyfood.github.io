@@ -24,7 +24,10 @@
       margin-right: -18px;
     }
     .solid-heart {
-      color: $color-primary;
+      background-image: $gradient-secondary;
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
     }
   }
   &__dishes-list {
@@ -51,6 +54,11 @@
     animation-duration: 2s;
     overflow: hidden;
     justify-content: space-between;
+    transition: all 0.3s ease-out;
+    &:hover {
+      box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.6);
+      cursor: pointer;
+    }
     &:hover .menu__checkbox {
       margin-right: 0px;
       transition: all 0.3s ease-out;
@@ -68,24 +76,30 @@
   }
   &__dish-information {
     padding: 0 10px;
-    display: flex;
     flex-direction: column;
+    min-width: 20%;
+    width: 500px;
     white-space: nowrap;
     overflow: hidden;
+    display: inline-block;
     text-overflow: ellipsis;
-    min-width: 220px;
-    min-width: 60%;
-
     h3 {
       font-size: 21px;
       font-family: $text-font;
       margin: 15px 15px 15px 5px;
+      text-overflow: ellipsis;
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      display: inline-block;
     }
     p {
       font-size: 17px;
       font-family: $text-font;
       margin: 15px 15px 15px 5px;
       margin-top: -8px;
+      text-overflow: ellipsis;
+      overflow: hidden;
     }
   }
   aside {
@@ -128,17 +142,33 @@
   &__order-button {
     display: flex;
     justify-content: center;
-    background-color: lighten($color: $color-primary, $amount: 10);
+    background: $gradient-secondary;
     width: 50%;
     margin: auto;
     margin-top: 60px;
-
     border-radius: 40px;
-
     box-shadow: 2px 2px 2px rgba(2, 2, 0, 0.6);
-    transition: all 0.25s ease-out;
+    transition: all 0.2s ease-out;
+    z-index: 1;
+    position: relative;
     &:hover {
-      @include btn;
+      box-shadow: 7px 5px 5px rgba(2, 2, 0, 0.6);
+      &::after {
+        opacity: 1;
+      }
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: darken($color: $color-secondary, $amount: 10);
+      opacity: 0;
+      z-index: -1;
+      transition: opacity 0.4s ease-out;
+      border-radius: 40px;
     }
     p {
       font-size: 25px;
@@ -245,6 +275,33 @@
     &__main-dish,
     &__desserts {
       width: 30%;
+    }
+  }
+}
+@media (max-width: 390px) {
+  .menu {
+    &__titre {
+      h1 {
+        font-size: 20px;
+        padding: 10px;
+      }
+      a {
+        padding: 10px;
+      }
+    }
+    &__order-button {
+      width: 90%;
+    }
+    &__dish-information {
+      overflow: auto;
+      h3 {
+        overflow: auto;
+        width: fit-content;
+      }
+      p {
+        overflow: auto;
+        width: fit-content;
+      }
     }
   }
 }
