@@ -5,6 +5,7 @@
   background-color: lighten($location-panel-color, 10%);
   border-radius: 40px 40px 0 0;
   height: 1450px;
+  margin-bottom: -20px;
   &__titre {
     width: 100%;
     display: flex;
@@ -23,8 +24,9 @@
       margin-left: 0;
       margin-right: -18px;
     }
+    /*  heart filled gradient integration*/
     .solid-heart {
-      background-image: $gradient-secondary;
+      background-image: $gradient-tertiary;
       color: transparent;
       -webkit-background-clip: text;
       background-clip: text;
@@ -142,7 +144,7 @@
   &__order-button {
     display: flex;
     justify-content: center;
-    background: $gradient-secondary;
+    background: $gradient-primary;
     width: 50%;
     margin: auto;
     margin-top: 60px;
@@ -164,7 +166,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background-color: darken($color: $color-secondary, $amount: 10);
+      background-color: darken($color: $color-secondary, $amount: 20);
       opacity: 0;
       z-index: -1;
       transition: opacity 0.4s ease-out;

@@ -1,34 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- HEAD of Ohmyfood website's homepage -->
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <!-- Title -->
     <title>OhmyFood</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Shrikhand&display=swap"
-      rel="stylesheet"
-    />
+
+        <!-- Google fonts : Roboto and Shrikhand -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
+
+
+        <!-- Font Awesome kit for icons -->
     <script
       src="https://kit.fontawesome.com/3514fda129.js"
       crossorigin="anonymous"
     ></script>
+
+        <!-- Path to Css stylesheets  -->
     <link rel="stylesheet" href="public/css/style.css" />
+
+
   </head>
+
+
   <body>
+
+
+        <!-- Ohmyfood's Loader for Homepage -->
     <div class="loader">
         <div class="loader__animation">
           <p>Ohmyfood
           </p>
       </div>
     </div>
-  </div>
+
+        <!-- Header of Ohmyfood -->
     <header>
       <div class="header__logo">
         <img src="images/logo/ohmyfood.png" alt="logo de ohmyfood" />
       </div>
+
+
+          <!-- Location Form, here for Paris, Belleville  -->
       <form method="post" action="#" class="location-panel">
         <p>
           <label for="location">
@@ -37,6 +57,7 @@
           <input type="text" name="location" value="Paris, Belleville" /></p>
       </form>
     </header>
+
     <section class="Navigation-menu">
       <h1>Réservez le menu qui vous convient</h1>
       <p class="Navigation-menu__texte">
@@ -49,6 +70,7 @@
        </a>
 
     </section>
+     
     <section class="Fonctionnement">
       <h1>Fonctionnement</h1>
       <div class="Fonctionnement__stepslist">
@@ -69,6 +91,8 @@
         </div>
       </div>
     </section>
+
+        <!-- List of restaurants -->
     <section class="list">
       <h1 class="list__texte--margin-left" id="Restaurants">Restaurants</h1>
       <div class="list__container">
@@ -95,6 +119,7 @@
             </div>
           </a>
         </article>
+            <!-- card of a restaurant  -->
         <article class="list__restaurant">
           <a href="menu2.html">
             <div class="list__image">
@@ -159,6 +184,8 @@
       </div>
       </div>
     </section>
+
+        <!-- Oh my food's footer  -->
     <footer class="footer">
       <h1>ohmyfood</h1>
       <nav>
@@ -172,6 +199,13 @@
             ><a href="#">devenir partenaire</a>
           </li>
           <li><a href="#">Mentions légales</a></li>
+
+
+
+            <!-- link to e-mail app on visitor's side -->
+
+
+            
           <li><a href="mailto:">Contact</a></li>
         </ul>
       </nav>

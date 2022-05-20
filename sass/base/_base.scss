@@ -12,8 +12,8 @@ $gradient-primary: linear-gradient(
 );
 
 $gradient-secondary: linear-gradient(to left, $color-primary, $color-tertiary);
-$gradient-secondary-dark: linear-gradient(
-  to left,
+$gradient-tertiary: linear-gradient(
+  to bottom,
   $color-primary,
   $color-secondary
 );
