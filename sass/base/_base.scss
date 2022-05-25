@@ -1,9 +1,12 @@
+/* color variables */
+/*  */
+
 $color-primary: #9356dc;
 $color-secondary: #ff79da;
 $color-tertiary: #99e2d0;
 $location-panel-color: lightgrey;
 $white: white;
-
+/*  gradients variables */
 $gradient-primary: linear-gradient(
   45deg,
   rgba(255, 121, 218, 1) 0%,
@@ -17,8 +20,12 @@ $gradient-tertiary: linear-gradient(
   $color-primary,
   $color-secondary
 );
+
+/* transition variables */
 $darken-transition: 0.4s ease-out;
 $box-shadow-transition: 0.2s ease-out;
+
+/* general css properties  */
 a {
   text-decoration: none;
   color: black;
@@ -30,7 +37,7 @@ a {
 .padding-bottom {
   padding-bottom: 40px;
 }
-
+/* mixins */
 @mixin box-shadow {
   box-shadow: 2px 2px 15px rgba(2, 2, 0, 0.6);
 }
@@ -43,6 +50,8 @@ a {
     opacity: 1;
   }
 }
+
+/*   keyframes  */
 @keyframes rotate-right {
   0% {
     transform: rotate(0deg);

@@ -1,78 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- HEAD of Ohmyfood website's homepage -->
+  <!-- HEAD of Ohmyfood website's homepage -->
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-
     <!-- Title -->
     <title>OhmyFood</title>
 
-        <!-- Google fonts : Roboto and Shrikhand -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
+    <!-- Google fonts : Roboto and Shrikhand -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
 
-
-        <!-- Font Awesome kit for icons -->
+    <!-- Font Awesome kit for icons -->
     <script
       src="https://kit.fontawesome.com/3514fda129.js"
       crossorigin="anonymous"
     ></script>
 
-        <!-- Path to Css stylesheets  -->
+    <!-- Path to Css stylesheets  -->
     <link rel="stylesheet" href="public/css/style.css" />
-
-
   </head>
 
-
   <body>
-
-
-        <!-- Ohmyfood's Loader for Homepage -->
+    <!-- Ohmyfood's Loader for Homepage -->
     <div class="loader">
-        <div class="loader__animation">
-          <p>Ohmyfood
-          </p>
+      <div class="loader__animation">
+        <p>Ohmyfood</p>
       </div>
     </div>
 
-        <!-- Header of Ohmyfood -->
+    <!-- Header of Ohmyfood -->
     <header>
       <div class="header__logo">
         <img src="images/logo/ohmyfood.png" alt="logo de ohmyfood" />
       </div>
 
-
-          <!-- Location Form, here for Paris, Belleville  -->
+      <!-- Location Form, here for Paris, Belleville  -->
       <form method="post" action="#" class="location-panel">
         <p>
           <label for="location">
             <i class="fa-solid fa-location-dot"></i>
           </label>
-          <input type="text" name="location" value="Paris, Belleville" /></p>
+          <input
+            type="text"
+            name="location"
+            id="location"
+            value="Paris, Belleville"
+          />
+        </p>
       </form>
     </header>
 
     <section class="Navigation-menu">
-      <h1>Réservez le menu qui vous convient</h1>
+      <h3>Réservez le menu qui vous convient</h3>
       <p class="Navigation-menu__texte">
         Découvrez des restaurants d'exception, séléctionnés par nos soins.
       </p>
       <a class="Navigation-menu__btn" href="#Restaurants">
-        <p>
-          Explorer nos restaurants
-        </p>
-       </a>
-
+        <p>Explorer nos restaurants</p>
+      </a>
     </section>
-     
+
     <section class="Fonctionnement">
-      <h1>Fonctionnement</h1>
+      <h3>Fonctionnement</h3>
       <div class="Fonctionnement__stepslist">
         <div class="Fonctionnement__steps">
           <span class="__number">1</span>
@@ -92,9 +88,9 @@
       </div>
     </section>
 
-        <!-- List of restaurants -->
+    <!-- List of restaurants -->
     <section class="list">
-      <h1 class="list__texte--margin-left" id="Restaurants">Restaurants</h1>
+      <h3 class="list__texte--margin-left" id="Restaurants">Restaurants</h3>
       <div class="list__container">
         <article class="list__restaurant">
           <a href="menu1.html">
@@ -111,15 +107,15 @@
                   <h2>La palette du goût</h2>
                   <p>Ménilmontant</p>
                 </div>
-                <a href="#">
+                <div>
                   <i class="fa-regular fa-heart regular-heart"></i>
                   <i class="fa-solid fa-heart solid-heart"></i>
-                </a>
+                </div>
               </div>
             </div>
           </a>
         </article>
-            <!-- card of a restaurant  -->
+        <!-- card of a restaurant  -->
         <article class="list__restaurant">
           <a href="menu2.html">
             <div class="list__image">
@@ -134,10 +130,10 @@
                 <h2>La note enchantée</h2>
                 <p>Charonne</p>
               </div>
-              <a href="#">
+              <div>
                 <i class="fa-regular fa-heart regular-heart"></i>
                 <i class="fa-solid fa-heart solid-heart"></i>
-              </a>
+              </div>
             </div>
           </a>
         </article>
@@ -154,10 +150,10 @@
                 <h2>A la française</h2>
                 <p>Cité Rouge</p>
               </div>
-              <a href="#">
+              <div>
                 <i class="fa-regular fa-heart regular-heart"></i>
                 <i class="fa-solid fa-heart solid-heart"></i>
-              </a>
+              </div>
             </div>
           </a>
         </article>
@@ -174,18 +170,17 @@
                 <h2>Le délice des sens</h2>
                 <p>Folie-Méricourt</p>
               </div>
-              <a href="#">
+              <div>
                 <i class="fa-regular fa-heart regular-heart"></i>
-                <i class="fa-solid fa-heart solid-heart" ></i>
-              </a>
+                <i class="fa-solid fa-heart solid-heart"></i>
+              </div>
             </div>
           </a>
         </article>
       </div>
-      </div>
     </section>
 
-        <!-- Oh my food's footer  -->
+    <!-- Oh my food's footer  -->
     <footer class="footer">
       <h1>ohmyfood</h1>
       <nav>
@@ -200,12 +195,8 @@
           </li>
           <li><a href="#">Mentions légales</a></li>
 
+          <!-- link to e-mail app on visitor's side -->
 
-
-            <!-- link to e-mail app on visitor's side -->
-
-
-            
           <li><a href="mailto:">Contact</a></li>
         </ul>
       </nav>

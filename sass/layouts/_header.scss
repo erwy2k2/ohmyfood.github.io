@@ -1,3 +1,5 @@
+/* Css set of rules for the header of ohmyfood's website  */ /* */
+
 .header {
   &__logo {
     width: 50%;
@@ -8,6 +10,8 @@
     }
   }
 }
+
+/* css rules for the location formulary */
 .location-panel {
   display: flex;
   background-color: lighten($color: $location-panel-color, $amount: 5);
