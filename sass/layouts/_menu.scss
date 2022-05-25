@@ -76,7 +76,7 @@
       animation: rotate-right 0.3s ease-in 0s 1 both;
     }
   }
-/* delay for animations  */
+  /* delay for animations  */
   &__delay1 {
     animation-delay: 0.4s;
   }
@@ -167,7 +167,7 @@
       }
     }
 
-    /* pseudo-element use for animation with opacity  */ 
+    /* pseudo-element use for animation with opacity  */
     &::after {
       content: "";
       position: absolute;
@@ -190,7 +190,7 @@
     }
   }
 }
-/* media queries for landscape orientation screens  */ 
+/* media queries for landscape orientation screens  */
 @media all and (orientation: landscape) {
   .menu {
     margin: auto;
@@ -276,7 +276,7 @@
     }
   }
 }
-}
+
 /* in the menu section, special css rules for screen under 390px */
 @media (max-width: 390px) {
   .menu {
