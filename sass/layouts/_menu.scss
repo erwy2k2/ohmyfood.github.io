@@ -13,13 +13,13 @@
     margin-top: -80px;
     align-items: center;
     h3 {
-      font-size: 35px;
+      font-size: 160%;
       font-family: $Title-font;
       margin-left: 5%;
     }
     a {
       align-items: center;
-      margin-right: 40px;
+      margin-right: 20px;
     }
     i {
       font-size: 35px;
@@ -93,7 +93,7 @@
     display: inline-block;
     text-overflow: ellipsis;
     h3 {
-      font-size: 21px;
+      font-size: 18px;
       font-family: $text-font;
       margin: 15px 15px 15px 5px;
       text-overflow: ellipsis;
@@ -103,7 +103,7 @@
       display: inline-block;
     }
     p {
-      font-size: 17px;
+      font-size: 15px;
       font-family: $text-font;
       margin: 15px 15px 15px 5px;
       margin-top: -8px;
@@ -120,7 +120,7 @@
     font-family: $text-font;
     font-weight: bold;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     min-width: 45px;
     padding-left: 10px;
     margin-right: 0px;
@@ -277,8 +277,8 @@
   }
 }
 
-/* in the menu section, special css rules for screen under 390px */
-@media (max-width: 390px) {
+/* in the menu section, special css rules for screen under 350px */
+@media (max-width: 350px) {
   .menu {
     &__titre {
       h1 {
@@ -289,18 +289,22 @@
         padding: 10px;
       }
     }
+    &__price {
+      font-size: 90%;
+    }
     &__order-button {
       width: 90%;
     }
     &__dish-information {
-      overflow: auto;
+      overflow: hidden;
       h3 {
-        overflow: auto;
         width: fit-content;
+        font-size: 90%;
       }
       p {
-        overflow: auto;
+        overflow: hidden;
         width: fit-content;
+        font-size: 80%;
       }
     }
   }
